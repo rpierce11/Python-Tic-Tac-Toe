@@ -15,7 +15,6 @@ def print_board(x):
     print("     |     |     ")
     print("  " + str(x[0]) + "  |  " + str(x[1]) + "  |  " + str(x[2]) + "  ")
     print("     |     |     ")
-    
 
 # Function that checks if player has won.
 def win_check(x):
@@ -30,7 +29,6 @@ def win_check(x):
         print(f"Congrats! {current_player} wins!")
         return True
 
-
 # Asks the user if they want to play another game.
 def replay():
     print("Would you like to play another game of Tic-Tac-Toe?\n")
@@ -44,7 +42,6 @@ def replay():
         else:
             choice = input("Invalid selection. Please choose [Y] or [N]. >> ").upper()
             
-
     if choice == "N":
         return False
     else:
