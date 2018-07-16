@@ -91,7 +91,6 @@ while playing:
     # Loop for current game.
     while game_on:
 
-
         choice = int(input(f"{current_player}, select a number. >> "))
         while True:
             if board[choice - 1] == "X" or board[choice - 1] == "O":
@@ -100,12 +99,10 @@ while playing:
             else:
                 break
 
-                
-        if current_player == "Player 1":
+        if current_player == player_one_name:
             board[choice - 1] = player_one_token
-        elif current_player == "Player 2":
+        elif current_player == player_two_name:
             board[choice - 1] = player_two_token
-
 
         print_board(board)
 
@@ -116,7 +113,6 @@ while playing:
             current_player = player_two_name
         elif current_player == player_two_name:
             current_player = player_one_name
-     
 
     if not replay():
         print("GAME OVER")
